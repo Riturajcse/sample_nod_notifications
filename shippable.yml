@@ -58,14 +58,14 @@ integrations:
     - integrationName: email
       type: email
       recipients: 
-        - shiphitchcock1@gmail.com
+        - shiptest.rc.me@gmail.com
         - varsha@shippable.com
       on_start: always
       on_success: always
       on_failure: always
       on_pull_request: always
       
-    - integrationName: ship-slack
+    - integrationName: slack
       type: slack
       recipients:
         - "#hitchcock1-public"
@@ -84,7 +84,7 @@ integrations:
       on_failure: always
       on_pull_request: always
       
-    - integrationName: ship-hipchat
+    - integrationName: hipchat
       type: hipchat
       recipients:
         - '#hitchcock1'
