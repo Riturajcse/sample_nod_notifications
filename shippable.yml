@@ -32,7 +32,7 @@ build:
 integrations:
   notifications:
   
-    - integrationName: ci-img1et
+    - integrationName: img1-rs
       type: webhook
       payload:
         - versionName=Shippable Run $BUILD_NUMBER 
