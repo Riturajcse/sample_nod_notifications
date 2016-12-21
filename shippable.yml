@@ -45,7 +45,7 @@ integrations:
      # on_failure: always
      # on_pull_request: always
       
-    - integrationName: sample_nod_notifications/issue
+    - integrationName: sample_nod_notifications-issue
       type: webhook
       payload:
         - title=Failure - $REPO_FULL_NAME - $BUILD_NUMBER
