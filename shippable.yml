@@ -3,8 +3,8 @@ language: node_js
 # Version number
 node_js:
   - 0.10
-  - 0.12
-  - 4.2.3
+#  - 0.12
+ # - 4.2.3
  # - iojs-v1
   #- iojs-v2
   #- iojs-v3
@@ -59,7 +59,7 @@ integrations:
       type: email
       recipients: 
         - shiptest.rc.me@gmail.com
-        - varsha@shippable.com
+        #- varsha@shippable.com
       on_start: always
       on_success: always
       on_failure: always
@@ -69,7 +69,7 @@ integrations:
       type: slack
       recipients:
         - "#hitchcock1-public"
-        - pvt-channel
+      #  - pvt-channel
       on_start: always
       on_success: always
       on_failure: always
@@ -87,9 +87,9 @@ integrations:
     - integrationName: hipchat
       type: hipchat
       recipients:
-        - '#hitchcock1'
+       # - '#hitchcock1'
         - '#hitchcock1pvt'
-        - '@shiphitchcock1'
+       # - '@shiphitchcock1'
       on_start: always
       on_success: always
       on_failure: always
