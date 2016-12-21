@@ -59,7 +59,7 @@ integrations:
       type: email
       recipients: 
         - shiptest.rc.me@gmail.com
-       # - varsha@shippable.com
+        - varsha@shippable.com
       on_start: always
       on_success: always
       on_failure: always
@@ -68,7 +68,7 @@ integrations:
     - integrationName: slack
       type: slack
       recipients:
-      #  - "#hitchcock1-public"
+        - "#hitchcock1-public"
         - pvt-channel
       on_start: always
       on_success: always
@@ -88,8 +88,8 @@ integrations:
       type: hipchat
       recipients:
         - '#hitchcock1'
-   #     - '#hitchcock1pvt'
-   #     - '@shiphitchcock1'
+        - '#hitchcock1pvt'
+        - '@shiphitchcock1'
       on_start: always
       on_success: always
       on_failure: always
