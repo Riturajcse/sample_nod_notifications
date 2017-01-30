@@ -11,8 +11,8 @@ node_js:
 #  - 5.0
 
 build:  
-  #pre_ci:
-    #- echo "this is pr-ci"
+  pre_ci:
+    - echo "this is pr-ci"
     
   pre_ci_boot:
     image_name: drydock/u12nod 
