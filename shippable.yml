@@ -3,7 +3,7 @@ language: node_js
 # Version number
 node_js:
   - 0.10
-  - 0.12
+  #- 0.12
   #- 4.2.3
   #- iojs-v1
  # - iojs-v2   
@@ -23,33 +23,10 @@ build:
    
 integrations:
   notifications:
-  
-    - integrationName: proj-sampleNod
-      type: webhook
-      payload:
-        - API_URL=$SHIPPABLE_API_URL
-        - CONTAINER_NAME=$SHIPPABLE_CONTAINER_NAME
-        - FOO=bar
-        - BOO=buzz
-      on_start: always
-      on_success: never
-      on_failure: always
-      
-    - integrationName: email
-      type: email
-      recipients: 
-        - riturajcse1994@gmail.com
-       # - varsha@shippable.com
-      on_start: always
-      on_success: always
-      on_failure: always
-      on_pull_request: never
-      
     - integrationName: slack
       type: slack
       recipients:
         - "#mybuilds"
-        - pvt-channel
       on_start: always  
       on_success: always
       on_failure: always
