@@ -21,15 +21,16 @@ build:
     #- ps cs
     #- sleep 5m
     
-   
-- integrationName: notify-hipchat
+integrations:    
+  notifications:
+    - integrationName: notify-hipchat
       type: hipchat
       recipients:
         - '#rc-private'
         - '#rc-public'
-        - '@shiptestrcow'
+        - '@shiptestrcow' 
       on_start: always
-      on_success: always   
-      on_failure: always
+      on_success: never
+      on_failure: never
  
          
