@@ -22,18 +22,14 @@ build:
     #- sleep 5m
     
    
-integrations:
-  notifications:
-    - integrationName: slack
-      type: slack
+- integrationName: notify-hipchat
+      type: hipchat
       recipients:
-        - "#mybuilds"
-      on_start: always  
-      on_success: always
+        - '#rc-private'
+        - '#rc-public'
+        - '@shiptestrcow'
+      on_start: always
+      on_success: always   
       on_failure: always
-      on_pull_request: never
-  
-    - integrationName: ship-trigger
-      type: webhook
-      on_success: always
+ 
          
