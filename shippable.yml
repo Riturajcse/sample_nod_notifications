@@ -25,9 +25,10 @@ integrations:
   notifications:
     - integrationName: notify-hipchat
       type: hipchat
-      recipients: '#rc-private'
-        #- '#rc-public'
-        #- '@shiptestrcow' 
+      recipients: 
+        - '#rc-private'
+        - '#rc-public'
+        - '@shiptestrcow' 
       on_start: always
       on_success: never
       on_failure: never
