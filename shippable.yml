@@ -26,7 +26,7 @@ integrations:
     - integrationName: notify-hipchat
       type: hipchat
       recipients:
-        - '#rc-private'
+        - 'rc-private'
         - '#rc-public'
         - '@shiptestrcow' 
       on_start: always
