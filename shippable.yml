@@ -23,7 +23,7 @@ build:
     
 integrations:    
   notifications:
-    - integrationName: notify-hipchat
+    - integrationName: notify-hipchat1
       type: hipchat
       recipients: 
         - '#rc-private'
